@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello Bulma!</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+  <section class="hero is-transparent is-medium">
+    <!-- Hero head: will stick at the top -->
+    <div class="hero-head">
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-brand">
+            <span class="navbar-burger" data-target="navbarMenuHeroA">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <div id="navbarMenuHeroA" class="navbar-menu">
+            <div class="navbar-end">
+              <a class="navbar-item is-size-5" href="index.html">
+                Home
+              </a>
+              <a class="navbar-item is-size-5" href="">
+                Cheatsheets
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Hero content: will be in the middle -->
+    <div class="hero-body is-mobile block svg-background">
+      <div class="">
+        <div class="columns">
+          <div class="column is-1"></div>
+          <aside class="menu">
+            <p class="menu-label">
+              Code Tutorials
+            </p>
+            <ul class="menu-list">
+              <li><a>Python</a></li>
+            </ul>
+            <p class="menu-label">
+              Cheatsheets
+            </p>
+            <ul class="menu-list">
+              <li><a href="tensorflow.html">Tensorflow</a></li>
+            </ul>
+            <ul class="menu-list">
+              <li><a href="pytorch.html">Pytorch</a></li>
+            </ul>
+            <p class="menu-label">
+              Web apps
+            </p>
+            <ul class="menu-list">
+              <li><a href="https://frodotype.me">Frodotype</a></li>
+              <li><a href="https://toxic-smiles.onrender.com/">Toxic SMILES</a></li>
+              <li><a href="https://share.streamlit.io/gdeol4/mutating-selfies/app.py">STONED SELFIES</a></li>
+            </ul>
+          </aside>
+
+          <div class="column is-6 is-offset-1">
+            <h1 class="title is-size-1">Hi, I'm Gurkamal Deol</h1>
+            <p class="lead is-size-4">I'm a <span class="highlight-container"><span class="highlight">Machine Learning
+                  Engineer</span></span> and <span class="highlight-container-green"><span
+                  class="highlight-green">Biologist</span></span>. I like to explore topics in drug discovery, machine
+              learning, and data engineering.</p>
+              <br>
+            <div class="row text-md-right header-buttons">
+              <a href="Gurkamal_Resume_updated.pdf" class="site-btn">Download CV</a>
+            </div>
+            <div class="block py-6">
+
+            </div>
+
+
+            <div class="card">
+
+
+
+              <div class="card-content">
+                <div class="content">
+
+                  <div class="container">
+                    <div class="container pb-5">
+                      <p class="subtitle is-3">Machine learning projects
+
+                      </p>
+
+                    </div>
+
+                    <article class="message is-warning">
+                      <div class="message-body">
+                        <strong>Frodotype</strong> &nbsp; <i class="fas fa-hat-wizard"></i>
+                        <br>
+                        Frodotype is a text generator based on OpenAI's GPT2 model and is further trained and finetuned
+                        on the text of fantasy novels. Built using Tensorflow, Chart.js, Google Cloud Platform, Docker.
+                        <br>
+                        <nav class="level is-mobile">
+                          <div class="level-left">
+                            <a class="level-item" href="https://frodotype.me">
+                              <span class="tag is-warning">Link to app</span>
+                            </a>
+                          </div>
+                        </nav>
+                      </div>
+                    </article>
+
+                    <article class="message is-warning">
+                      <div class="message-body">
+                        <strong>Toxic SMILES</strong> &nbsp; <i class="fas fa-biohazard"></i>
+                        <br>
+                        This is an end-to-end machine learning project I built as a web app that predicts whether a
+                        molecular compound is an environmental carcinogen.
+                        The project was built using RDKit, Flask, Docker, Microsoft Azure, Scikit-learn.
+                        <br>
+                        <nav class="level is-mobile">
+                          <div class="level-left">
+                            <a class="level-item" href="https://toxic-smiles.onrender.com/">
+                              <span class="tag is-warning">Link to app</span>
+                            </a>
+                          </div>
+                        </nav>
+                      </div>
+                    </article>
+
+                  </div>
+
+                  
+
+                  <ul class="">
+
+
+                  </ul>
+                </div>
+
+                <div class="content">
+
+                  <div class="container">
+                    <div class="container pb-5">
+                      <p class="subtitle is-3">Python projects and code
+
+                      </p>
+
+                    </div>
+
+                    <article class="message is-primary">
+                      <div class="message-body">
+                        <strong>STONED SELFIES</strong> &nbsp; <i class="fas fa-dna"></i>
+                        <br>
+                        This app was built using code from the paper Beyond Generative Models: Superfast Traversal, Optimization, Novelty, Exploration and Discovery (STONED) Algorithm for Molecules using SELFIES. A starting molecular structure is chosen
+                        and the genetic algorithm is capable of producing novel molecules on par with GPU powered deep learning models without the expensive resources. The app hosted using streamlit.
+                        <br>
+                        <nav class="level is-mobile">
+                          <div class="level-left">
+                            <a class="level-item" href="https://share.streamlit.io/gdeol4/mutating-selfies/app.py">
+                              <span class="tag is-primary">Link to app</span>
+                            </a>
+                          </div>
+                        </nav>
+                      </div>
+                    </article>
+
+                  </div>
+
+                  
+
+                  <ul class="">
+
+
+                  </ul>
+                </div>
+
+              </div>
+
+
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact">
+
+
+
+  </section>
+
+
+  <!-- 
+Live: https://melanieseltzer.github.io/es6-all-the-things/
+Repo: https://github.com/melanieseltzer/es6-all-the-things
+-->
+
+
+
+
+  <!-- END base-navbar -->
+
+
+
+  <script src="js/scripts-all.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/anime.min.js"></script>
+  <script src="js/main.js"></script>
+  <script type="text/javascript">
+
+</body>
+
+</html>
