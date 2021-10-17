@@ -1,154 +1,232 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Hello Bulma!</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@200&display=swap" rel="stylesheet">
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@200&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
-
-
-          <section class="hero has-background-warning is-medium">
-            <!-- Hero head: will stick at the top -->
-            <div class="hero-head">
-                <nav class="navbar">
-                  <div class="container">
-                    <div class="navbar-brand">
-                      <span class="navbar-burger" data-target="navbarMenuHeroA">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                      </span>
-                    </div>
-                    <div id="navbarMenuHeroA" class="navbar-menu">
-                      <div class="navbar-end">
-                        <a class="navbar-item is-size-5" href="index.html">
-                          Home
-                        </a>
-                        <a class="navbar-item is-size-5" href="">
-                          Cheatsheets
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </nav>
+    <section class="hero has-background-warning is-medium">
+      <!-- Hero head: will stick at the top -->
+      <div class="container">
+        <div class="columns">
+          <div class="column is-6 is-offset-3">
+            <nav
+              class="navbar has-background-warning"
+              role="navigation"
+              aria-label="main navigation"
+            >
+              <input type="checkbox" id="toggler" class="toggler" />
+              <!-- for toggling functionality. Should be at the same level as navbar-menu -->
+              <div class="navbar-brand">
+                <!-- left side of bulma navbar -->
+                <label
+                  for="toggler"
+                  role="button"
+                  class="navbar-burger burger"
+                  aria-label="menu"
+                  aria-expanded="false"
+                  data-target="navbarBasicExample"
+                >
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                </label>
               </div>
-          
-            <!-- Hero content: will be in the middle -->
-          </section>
-<!-- 
+              <!-- end of left side of bulma navbar -->
+              <div id="navbarBasicExample" class="navbar-menu">
+                <!-- dont shown on mobile -->
+                <div class="navbar-start">
+                  <!-- left on big screen -->
+
+                  <div class="navbar-end">
+                    <!-- right on big screen -->
+                    <!-- a dropdown menu -->
+                    <div class="navbar-item has-dropdown is-hoverable">
+                      <!-- begin dropdown box -->
+                      <input type="checkbox" id="dropdown1" />
+                      <label for="dropdown1" class="navbar-link">
+                        Cheatsheets
+                      </label>
+                      <!-- title dropdown -->
+
+                      <div id="dropdown-content1" class="navbar-dropdown">
+                        <!-- dropdown box items -->
+                        <a
+                          class="navbar-item"
+                          target="new"
+                          href="tensorflow.html"
+                          >Tensorflow</a
+                        >
+                        <a class="navbar-item" target="new">Pytorch</a>
+                      </div>
+                      <!-- end dropdown box -->
+                    </div>
+                    <!-- end dropdown menu -->
+
+                    <!-- a dropdown menu -->
+                    <div class="navbar-item has-dropdown is-hoverable">
+                      <!-- begin dropdown menu -->
+                      <input type="checkbox" id="dropdown2" />
+                      <label for="dropdown2" class="navbar-link">
+                        Code tutorials
+                      </label>
+                      <!-- title dropdown -->
+
+                      <div id="dropdown-content2" class="navbar-dropdown">
+                        <!-- dropdown box items -->
+                        <a class="navbar-item" href="python.html" target="new"
+                          >Python</a
+                        >
+                        <a
+                          class="navbar-item"
+                          href="bioinformatics.html"
+                          target="new"
+                          >Bioinformatics</a
+                        >
+                        <hr class="navbar-divider" />
+                      </div>
+                      <!-- end dropdown box -->
+                    </div>
+                    <!-- end dropdown menu -->
+
+                    <!-- a dropdown menu -->
+                    <a
+                      class="navbar-item navbar-lin"
+                      href="index.html"
+                      target="new"
+                      >Home</a
+                    >
+                    <a
+                      class="navbar-item navbar-lin"
+                      href="https://www.neongenes.com"
+                      target="new"
+                      >Blog</a
+                    >
+                  </div>
+                  <!-- end navbar-start-->
+                </div>
+                <!-- end navbar-end -->
+              </div>
+              <!-- end navbar-menu -->
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero content: will be in the middle -->
+    </section>
+    <!-- 
 Live: https://melanieseltzer.github.io/es6-all-the-things/
 Repo: https://github.com/melanieseltzer/es6-all-the-things
 -->
 
-<section class="hero is-warning">
-  <div class="hero-body">
-    <div class="columns">
-        <div class="column">
+    <section class="hero is-warning">
+      <div class="hero-body">
+        <div class="columns">
+          <div class="column">
             <figure class="image">
-                <img src="images/tensorflow_logo.png">
-              </figure>
-        </div>
-      <div class="column">
-        <div class="container content">
-          <h1 class="title">Tensorflow Cheatsheet</h1>
-          <h3 class="subtitle">
-             Useful code 🤓💻
-          </h3>
-          <div class="pt-6"></div>
-          <div class="box">
-            <h4 id="const" class="title is-3">Installation and getting started</h4>
-            <article class="message is-primary">
-              <span class="icon has-text-primary">
-                <i class="fas fa-info-circle"></i>
-              </span> 
-              <div class="message-body">
-                Block-scoped. Cannot be re-assigned. Not immutable.
+              <img src="images/tensorflow_logo.png" />
+            </figure>
+          </div>
+          <div class="column">
+            <div class="container content">
+              <h1 class="title">Tensorflow Cheatsheet</h1>
+              <h3 class="subtitle">Useful code 🤓💻</h3>
+              <div class="pt-6"></div>
+              <div class="box">
+                <h4 id="const" class="title is-3">
+                  Installation and getting started
+                </h4>
+                <article class="message is-primary">
+                  <span class="icon has-text-primary">
+                    <i class="fas fa-info-circle"></i>
+                  </span>
+                  <div class="message-body">
+                    Block-scoped. Cannot be re-assigned. Not immutable.
+                  </div>
+                </article>
+                <pre><code class="language-javascript">const test = 'test';</code></pre>
               </div>
-            </article>
-            <pre><code class="language-javascript">const test = 'test';</code></pre>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section class="section">
-  <div class="container">
-    <div class="columns">
-      <div class="column is-3">
-        <aside class="is-medium menu">
-          <p class="menu-label">
-            Basics
-          </p>
-          <ul class="menu-list">
-            <li><a href="#tensor">Tensors</a></li>
-            <li><a href="#let"></a></li>
-          </ul>
-        </aside>
-      </div>
-
-      <div class="column is-9">
-        <div class="content is-medium">
-          <h3 class="title is-3">Code</h3>
-          <div class="box">
-            <h4 id="tensor" class="title is-3">Tensors</h4>
-            <article class="message is-primary">
-              <span class="icon has-text-primary">
-                <i class="fas fa-info-circle"></i>
-              </span> 
-              <div class="message-body">
-                Block-scoped. Cannot be re-assigned. Not immutable.
-              </div>
-            </article>
-            <pre><code class="language-javascript">const test = 'test';</code></pre>
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-3">
+            <aside class="is-medium menu">
+              <p class="menu-label">Basics</p>
+              <ul class="menu-list">
+                <li><a href="#tensor">Tensors</a></li>
+                <li><a href="#let"></a></li>
+              </ul>
+            </aside>
           </div>
 
-          <div class="box">
-            <h4 id="let" class="title is-3">let</h4>
-            <article class="message is-primary">
-              <span class="icon has-text-primary">
-                <i class="fas fa-info-circle"></i>
-              </span> 
-              <div class="message-body">
-                Block-scoped. Can be re-assigned.
+          <div class="column is-9">
+            <div class="content is-medium">
+              <h3 class="title is-3">Code</h3>
+              <div class="box">
+                <h4 id="tensor" class="title is-3">Tensors</h4>
+                <article class="message is-primary">
+                  <span class="icon has-text-primary">
+                    <i class="fas fa-info-circle"></i>
+                  </span>
+                  <div class="message-body">
+                    Block-scoped. Cannot be re-assigned. Not immutable.
+                  </div>
+                </article>
+                <pre><code class="language-javascript">const test = 'test';</code></pre>
               </div>
-            </article>
-            <pre><code class="language-javascript">let i = 0;</code></pre>
-          </div>
 
-          <div class="box">
-            <h4 id="lorem" class="title is-4">More to come...</h4>
-            <article class="message is-primary">
-              <span class="icon has-text-primary">
-                <i class="fas fa-info-circle"></i>
-              </span> 
-              <div class="message-body">
-                Lorem ipsum dolor sit amet, mea ne viderer veritus menandri, id scaevola gloriatur instructior sit.
+              <div class="box">
+                <h4 id="let" class="title is-3">let</h4>
+                <article class="message is-primary">
+                  <span class="icon has-text-primary">
+                    <i class="fas fa-info-circle"></i>
+                  </span>
+                  <div class="message-body">
+                    Block-scoped. Can be re-assigned.
+                  </div>
+                </article>
+                <pre><code class="language-javascript">let i = 0;</code></pre>
               </div>
-            </article>
-            <pre><code class="language-javascript">let i = 0;</code></pre>
+
+              <div class="box">
+                <h4 id="lorem" class="title is-4">More to come...</h4>
+                <article class="message is-primary">
+                  <span class="icon has-text-primary">
+                    <i class="fas fa-info-circle"></i>
+                  </span>
+                  <div class="message-body">
+                    Lorem ipsum dolor sit amet, mea ne viderer veritus menandri,
+                    id scaevola gloriatur instructior sit.
+                  </div>
+                </article>
+                <pre><code class="language-javascript">let i = 0;</code></pre>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-          
-    
-        <!-- END base-navbar -->
-
-
-
-
-
+    <!-- END base-navbar -->
   </body>
 </html>

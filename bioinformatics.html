@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hello Bulma!</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+
+  </section>
+    <div class="container">
+      <div class="columns">
+        <div class="column is-6 is-offset-3">
+          <nav
+            class="navbar is-transparent"
+            role="navigation"
+            aria-label="main navigation"
+          >
+            <input type="checkbox" id="toggler" class="toggler" />
+            <!-- for toggling functionality. Should be at the same level as navbar-menu -->
+            <div class="navbar-brand">
+              <!-- left side of bulma navbar -->
+              <label
+                for="toggler"
+                role="button"
+                class="navbar-burger burger"
+                aria-label="menu"
+                aria-expanded="false"
+                data-target="navbarBasicExample"
+              >
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </label>
+            </div>
+            <!-- end of left side of bulma navbar -->
+            <div id="navbarBasicExample" class="navbar-menu">
+              <!-- dont shown on mobile -->
+              <div class="navbar-start">
+                <!-- left on big screen -->
+
+                <div class="navbar-end">
+                  <!-- right on big screen -->
+                  <!-- a dropdown menu -->
+                  <div class="navbar-item has-dropdown is-hoverable">
+                    <!-- begin dropdown box -->
+                    <input type="checkbox" id="dropdown1" />
+                    <label for="dropdown1" class="navbar-link">
+                      Cheatsheets
+                    </label>
+                    <!-- title dropdown -->
+
+                    <div id="dropdown-content1" class="navbar-dropdown">
+                      <!-- dropdown box items -->
+                      <a class="navbar-item" target="new" href="tensorflow.html"
+                        >Tensorflow</a
+                      >
+                      <a class="navbar-item" target="new">Pytorch</a>
+                    </div>
+                    <!-- end dropdown box -->
+                  </div>
+                  <!-- end dropdown menu -->
+
+                  <!-- a dropdown menu -->
+                  <div class="navbar-item has-dropdown is-hoverable">
+                    <!-- begin dropdown menu -->
+                    <input type="checkbox" id="dropdown2" />
+                    <label for="dropdown2" class="navbar-link">
+                      Code tutorials
+                    </label>
+                    <!-- title dropdown -->
+
+                    <div id="dropdown-content2" class="navbar-dropdown">
+                      <!-- dropdown box items -->
+                      <a class="navbar-item" href="python.html" target="new"
+                        >Python</a
+                      >
+                      <a
+                        class="navbar-item"
+                        href="bioinformatics.html"
+                        target="new"
+                        >Bioinformatics</a
+                      >
+                      <hr class="navbar-divider" />
+                    </div>
+                    <!-- end dropdown box -->
+                  </div>
+                  <!-- end dropdown menu -->
+
+                  <!-- a dropdown menu -->
+                  <a
+                    class="navbar-item navbar-lin"
+                    href="index.html"
+                    target="new"
+                    >Home</a
+                  >
+                  <a
+                    class="navbar-item navbar-lin"
+                    href="https://www.neongenes.com"
+                    target="new"
+                    >Blog</a
+                  >
+                </div>
+                <!-- end navbar-start-->
+              </div>
+              <!-- end navbar-end -->
+            </div>
+            <!-- end navbar-menu -->
+          </nav>
+        </div>
+      </div>
+    </div>
+
+</section>
+
+
+<section class="hero is-white is-medium">
+  <!-- Hero head: will stick at the top -->
+
+  <!-- Hero content: will be in the middle -->
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <p class="title">
+        Bioinformatics code 
+      </p>
+      <p class="subtitle">
+        Useful and reusable bits of code
+      </p>
+    </div>
+  </div>
+
+</section>
+
+  </body>
+</html>
