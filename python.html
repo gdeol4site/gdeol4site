@@ -1,146 +1,199 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Hello Bulma!</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@200&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <section>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hello Bulma!</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@200&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel='stylesheet'
+    href='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/css/OverlayScrollbars.min.css'>
+  <link rel='stylesheet' href='https://kingsora.github.io/OverlayScrollbars/etc/os-theme-thin-dark.css'>
+  <link rel='stylesheet' href="../css/prism.css">
+  <link rel="stylesheet" href="../css/cheatsheet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <script src="https://kit.fontawesome.com/7dc3015a44.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <section>
+    <div class="container">
+      <div class="columns">
+        <div class="column is-6 is-offset-3">
+          <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+            <input type="checkbox" id="toggler" class="toggler" />
+            <!-- for toggling functionality. Should be at the same level as navbar-menu -->
+            <div class="navbar-brand">
+              <!-- left side of bulma navbar -->
+              <label for="toggler" role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </label>
+            </div>
+            <!-- end of left side of bulma navbar -->
+            <div id="navbarBasicExample" class="navbar-menu">
+              <!-- dont shown on mobile -->
+              <div class="navbar-start">
+                <!-- left on big screen -->
+
+                <div class="navbar-end">
+                  <!-- right on big screen -->
+                  <!-- a dropdown menu -->
+                  <div class="navbar-item has-dropdown is-hoverable">
+                    <!-- begin dropdown box -->
+                    <input type="checkbox" id="dropdown1" />
+                    <label for="dropdown1" class="navbar-link">
+                      Cheatsheets
+                    </label>
+                    <!-- title dropdown -->
+
+                    <div id="dropdown-content1" class="navbar-dropdown">
+                      <!-- dropdown box items -->
+                      <a class="navbar-item" target="new" href="tensorflow.html">Tensorflow</a>
+                      <a class="navbar-item" target="new">Pytorch</a>
+                    </div>
+                    <!-- end dropdown box -->
+                  </div>
+                  <!-- end dropdown menu -->
+
+                  <!-- a dropdown menu -->
+                  <div class="navbar-item has-dropdown is-hoverable">
+                    <!-- begin dropdown menu -->
+                    <input type="checkbox" id="dropdown2" />
+                    <label for="dropdown2" class="navbar-link">
+                      Code tutorials
+                    </label>
+                    <!-- title dropdown -->
+
+                    <div id="dropdown-content2" class="navbar-dropdown">
+                      <!-- dropdown box items -->
+                      <a class="navbar-item" href="python.html" target="new">Python</a>
+                      <a class="navbar-item" href="bioinformatics.html" target="new">Bioinformatics</a>
+                      <hr class="navbar-divider" />
+                    </div>
+                    <!-- end dropdown box -->
+                  </div>
+                  <!-- end dropdown menu -->
+
+                  <!-- a dropdown menu -->
+                  <a class="navbar-item navbar-lin" href="index.html" target="new">Home</a>
+                  <a class="navbar-item navbar-lin" href="#" target="new">Blog</a>
+                </div>
+                <!-- end navbar-start-->
+              </div>
+              <!-- end navbar-end -->
+            </div>
+            <!-- end navbar-menu -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+
+
+    <section class="section">
       <div class="container">
         <div class="columns">
-          <div class="column is-6 is-offset-3">
-            <nav
-              class="navbar is-transparent"
-              role="navigation"
-              aria-label="main navigation"
-            >
-              <input type="checkbox" id="toggler" class="toggler" />
-              <!-- for toggling functionality. Should be at the same level as navbar-menu -->
-              <div class="navbar-brand">
-                <!-- left side of bulma navbar -->
-                <label
-                  for="toggler"
-                  role="button"
-                  class="navbar-burger burger"
-                  aria-label="menu"
-                  aria-expanded="false"
-                  data-target="navbarBasicExample"
-                >
-                  <span aria-hidden="true"></span>
-                  <span aria-hidden="true"></span>
-                  <span aria-hidden="true"></span>
-                </label>
-              </div>
-              <!-- end of left side of bulma navbar -->
-              <div id="navbarBasicExample" class="navbar-menu">
-                <!-- dont shown on mobile -->
-                <div class="navbar-start">
-                  <!-- left on big screen -->
+        </div>
+        <div class="column is-8 is-offset-2">
+          <div class="content is-medium">
+            <h1 class="title"> Restriction enzyme digest in python using lists, dicts, and regular expresisons</h1>
 
-                  <div class="navbar-end">
-                    <!-- right on big screen -->
-                    <!-- a dropdown menu -->
-                    <div class="navbar-item has-dropdown is-hoverable">
-                      <!-- begin dropdown box -->
-                      <input type="checkbox" id="dropdown1" />
-                      <label for="dropdown1" class="navbar-link">
-                        Cheatsheets
-                      </label>
-                      <!-- title dropdown -->
+            <div class="box">
+              <h4 id="const" class="subtitle">Creating a restriction enzyme dictionary </h4>
+              <article class="message is-primary">
 
-                      <div id="dropdown-content1" class="navbar-dropdown">
-                        <!-- dropdown box items -->
-                        <a
-                          class="navbar-item"
-                          target="new"
-                          href="tensorflow.html"
-                          >Tensorflow</a
-                        >
-                        <a class="navbar-item" target="new">Pytorch</a>
-                      </div>
-                      <!-- end dropdown box -->
-                    </div>
-                    <!-- end dropdown menu -->
-
-                    <!-- a dropdown menu -->
-                    <div class="navbar-item has-dropdown is-hoverable">
-                      <!-- begin dropdown menu -->
-                      <input type="checkbox" id="dropdown2" />
-                      <label for="dropdown2" class="navbar-link">
-                        Code tutorials
-                      </label>
-                      <!-- title dropdown -->
-
-                      <div id="dropdown-content2" class="navbar-dropdown">
-                        <!-- dropdown box items -->
-                        <a class="navbar-item" href="python.html" target="new"
-                          >Python</a
-                        >
-                        <a
-                          class="navbar-item"
-                          href="bioinformatics.html"
-                          target="new"
-                          >Bioinformatics</a
-                        >
-                        <hr class="navbar-divider" />
-                      </div>
-                      <!-- end dropdown box -->
-                    </div>
-                    <!-- end dropdown menu -->
-
-                    <!-- a dropdown menu -->
-                    <a
-                      class="navbar-item navbar-lin"
-                      href="index.html"
-                      target="new"
-                      >Home</a
-                    >
-                    <a
-                      class="navbar-item navbar-lin"
-                      href="https://www.neongenes.com"
-                      target="new"
-                      >Blog</a
-                    >
-                  </div>
-                  <!-- end navbar-start-->
+                <div class="message-body">
+                  The activity of a restriction enzyme can be defined by its recognition site on the DNA
+                  sequence and the position relative to the recognition site, at which it cuts the DNA. Let’s
+                  create a dictionary that we can use to define these restriction enzyme parameters:
                 </div>
-                <!-- end navbar-end -->
-              </div>
-              <!-- end navbar-menu -->
-            </nav>
+              </article>
+
+              <pre><code class="language-javascript">restrictionEnzymes = {}</code></pre>
+              <pre><code class="language-javascript">restrictionEnzymes['bamH1'] = ['ggatcc',0]
+restrictionEnzymes['sma1'] = ['cccggg',2]</code></pre>
+              <article class="message is-primary">
+
+                <div class="message-body">
+                  Notice that the key for each entry in this dictionary is the name of the enzyme and
+                  the value is a list whose first element is the enzyme’s recognition site and second element
+                  is the position relative to the recognition site, at which the enzyme cuts the DNA.
+                  You could imagine adding a whole bunch of restriction enzymes to this dictionary,
+                  and even using as a kind of simple restriction enzyme database with which you could
+                  do digital DNA restriction experiments. One thing you would almost certainly need
+                  however is a way to keep track of which enzymes are present in the dictionary and to be
+                  able to query whether or not the dictionary has the enzyme you are interested in using.
+                  There are two very useful dictionary methods that you should know if you are going to
+                  use dictionaries in your code, and the best way to describe them is to see them in action: </div>
+              </article>
+            </div>
+            <div class="box">
+              <h4 id="let" class="title is-3">let</h4>
+              <article class="message is-primary">
+                <span class="icon has-text-primary">
+                  <i class="fas fa-info-circle"></i>
+                </span>
+                <div class="message-body">
+                  Block-scoped. Can be re-assigned.
+                </div>
+              </article>
+              <pre><code class="language-javascript">let i = 0;</code></pre>
+            </div>
+            <h3 class="title is-3">More to Come...</h3>
+            <div class="box">
+              <h4 id="lorem" class="title is-4">More to come...</h4>
+              <article class="message is-primary">
+                <span class="icon has-text-primary">
+                  <i class="fas fa-info-circle"></i>
+                </span>
+                <div class="message-body">
+                  Lorem ipsum dolor sit amet, mea ne viderer veritus menandri, id scaevola gloriatur instructior sit.
+                </div>
+              </article>
+              <pre><code class="language-javascript">let i = 0;</code></pre>
+            </div>
           </div>
         </div>
       </div>
+      </div>
+
     </section>
 
-    <script></script>
-  </body>
+  </section>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/js/OverlayScrollbars.min.js'></script>
+
+  <script>
+    window.addEventListener('resize', () => {
+      const divs = document.querySelectorAll(".menu-list");
+      if (window.innerWidth < 768) {
+        divs.forEach(div => div.classList.add("tags"));
+      } else {
+        divs.forEach(div => div.classList.remove("tags"));
+      }
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      //The first argument are the elements to which the plugin shall be initialized
+      //The second argument has to be at least a empty object or a object with your desired options
+      OverlayScrollbars(document.querySelectorAll("body"), {});
+    });
+  </script>
+
+</body>
+
 </html>
